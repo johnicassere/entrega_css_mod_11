@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: rgb(246, 150, 187);
+}
+header {
+  background-color: rgb(236, 87, 143);
+  border-bottom: 2px solid #000;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+.nav-link ul {
+  display: flex;
+}
+
+.nav-link li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.nav-link li a {
+  text-decoration: none;
+}
+
+#sobre .container {
+  display: flex;
+}
+
+#sobre article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sobre img {
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#sobre article h2 {
+  margin: 20px 0;
+  text-shadow: 1px 1px #fff;
+}
+
+#sobre article p {
+  margin: 0 20px 0 20px;
+  padding: 20px;
+}
+
+#produtos h2 {
+  margin: 0 0 10px 10px;
+  text-shadow: 1px 1px #fff;
+}
+
+.container-produtos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container-produtos article {
+  align-items: center;
+}
+
+.card {
+  max-width: 250px;
+  margin-left: 2px;
+}
+
+.card img {
+  border-radius: 4px;
+  border: solid 1px #000;
+  width: 100%;
+}
+
+.card h3 {
+  margin-left: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.card button {
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 200px;
+  background-color: rgb(171, 170, 170);
+}
+
+.card button:hover {
+  background-color: rgb(115, 113, 113);
+}
+
+@media screen and (max-width: 1022px) {
+  div {
+    background-color: rgb(236, 87, 143);
+  }
+}
+
+@media screen and (max-width: 968px) and (max-width: 1920px) {
+  header .container {
+    display: block;
+    align-items: center;
+  }
+
+  h1 {
+    padding: 20px;
+    margin: 0 2em;
+  }
+
+  .nav-link ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  #sobre .container,
+  #sobre article {
+    display: block;
+    align-items: center;
+  }
+
+  #sobre .container h2 {
+    margin: 1.8em;
+  }
+
+  #sobre .container p {
+    max-width: 38%;
+    margin: 2.3em;
+  }
+
+  #sobre .container img {
+    width: 31%;
+    margin: 5em;
+  }
+
+  .container-produtos {
+    display: block;
+    margin: 5.5em;
+    margin-bottom: 16px;
+  }
+
+  #produtos h2 {
+    margin-left: 1.8em;
+  }
+
+  .card img {
+    width: 125%;
+  }
+  .card h3 {
+    margin-left: 1em;
+  }
+
+  .card p {
+    margin: 1em 0 0 4em;
+  }
+
+  .container-produtos button {
+    margin: 1em 0 1em 4em;
+  }
+}
